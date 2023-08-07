@@ -15,6 +15,11 @@ function App() {
       ref.current?.scrollIntoView({ behavior: 'smooth' });
     }
 
+    const scrollToAbout = () =>{
+        const section = document.querySelector('.aboutme');
+        section.scrollIntoView({behavior:'smooth'})
+    }
+
 
   return (
 <div>
@@ -22,7 +27,7 @@ function App() {
             <div class = "picture"><img class = "mypic" src = {LinkedIn} alt = "mypic"></img></div>
             <div class = "welcome">Hi! I'm <span style={{color: 'brown'}}>Sameeksha Nair</span>   <br></br> Welcome to my website :)</div>
             <div class="menu">
-                <div class = "heading" ><button className= 'menu'onClick={handleClick} style={{marginLeft: '50px'}}>About Me</button></div>
+                <div class = "heading" ><button className= 'menu'onClick={scrollToAbout} style={{marginLeft: '50px'}}>About Me</button></div>
                 <div class = "heading"><button className= 'menu' onClick={handleClick} style={{marginLeft: '-35px'}}>Projects</button></div>
             </div>
         </div>
@@ -38,11 +43,11 @@ function App() {
         </p>
         <iframe src={Resume} title='Resume'></iframe>
     
-        <p class="aboutme">
+        <p class="aboutme" >
             Some of the projects I have worked on in the last couple of years:
         </p>
     
-        <div class="inven">
+        <div class="inven" ref={ref}>
                 <div class="video">
                     Simple fruits collection game with an Inventory system using Unreal Engine
                     <video class="clothing" controls autoPlay muted>
