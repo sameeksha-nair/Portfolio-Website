@@ -1,15 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import LinkedIn from './Photos/LinkedIn.jpeg';
+import Clothing from './Photos/clothing.mp4';
+import Inventory from './Photos/InvenGame.mp4';
+import Room from './Photos/room.jpg';
+import Resume from './Photos/Resume_Updated3.pdf'
 
 function App() {
   return (
 <div>
         <div class="block">
-            <div class = "picture"><img class = "mypic" src = "LinkedIn.jpeg" alt = "mypic"></img></div>
+            <div class = "picture"><img class = "mypic" src = {LinkedIn} alt = "mypic"></img></div>
             <div class = "welcome">Hi! I'm <span>Sameeksha Nair</span>   <br></br> Welcome to my website :)</div>
             <div class="menu">
-                <div class = "heading" ><a href="about.html">About Me</a></div>
-                <div class = "heading"><a href="projects.html">Projects</a></div>
+                <div class = "heading" ><a href=''>About Me</a></div>
+                <div class = "heading"><a href=''>Projects</a></div>
             </div>
         </div>
         <div class="foot">
@@ -22,7 +27,7 @@ function App() {
             have a lot of interest in various tech fields such as Artificial Intelligence, Data Science, Game Development and of course Web Development. Hopefully
             this website can provide a good overview of all my skills. Here's my resume for past work experience and skills :)
         </p>
-        <iframe src="Resume_Updated3.pdf"></iframe>
+        <iframe src={Resume}></iframe>
     
         <p class="aboutme">
             Some of the projects I have worked on in the last couple of years:
@@ -32,18 +37,18 @@ function App() {
                 <div class="video">
                     Simple fruits collection game with an Inventory system using Unreal Engine
                     <video class="clothing" controls autoplay muted>
-                    <source src="InvenGame.mp4" type="video/mp4"></source>
+                    <source src={Inventory} type="video/mp4"></source>
                     </video>
                 </div>
                 <div class="video">
                     A clothing store website with a working shopping cart system using HTML, CSS and Javascript (<a href="https://github.com/sameeksha-nair/Clothing-Brand-Website" target="_blank">link</a>)    
                     <video class="clothing" controls autoplay muted>
-                        <source src="clothing.mp4" type="video/mp4"></source>
+                        <source src={Clothing} type="video/mp4"></source>
                         </video>
                 </div>
                 <div class="video">
                     A 3D room made using GLUT and OpenGL libraries in C++ (CLassic OpenGL)(<a href="https://github.com/sameeksha-nair/3D-Room" target="_blank">link</a>)
-                    <img src="Photos/room.jpg" alt="graphic room" class="room"></img>
+                    <img src={Room} alt="graphic room" class="room"></img>
                 </div>
                
         </div>
