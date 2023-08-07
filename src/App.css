@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+
+body{
+   /*background-image: url(https://getwallpapers.com/wallpaper/full/1/f/8/1390237-new-computer-science-wallpapers-1920x1200-meizu.jpg);*/
+   background-color: black;
+   background-attachment: fixed;
+}
+
+
+.block{
+    display: block;  
+    background-color: #8486b6;
+    margin: auto;
+    padding-left: 30ex;
+    padding-top: 30ex;
+    padding-right: 30ex;
+    padding-bottom: 10ex;
+    max-width: 50%;   
+    margin-top: 120px;
+    box-shadow: 80px 80px 0px 30px white, -80px -80px 0px 30px gray;
+    animation: startup2 2s;
+}
+
+.picture{
+    margin-left: -25ex;
+    margin-top: -25ex;   
+    animation: startup1 2s;
+}
+
+@keyframes startup1 {
+    from{
+        transform: translateY(-150px);
+       
+    }
+    to{
+        transform: translateY(0px)
+        
+    }
+}
+
+@keyframes startup2 {
+    from{
+        transform: translateX(-150px);
+    }
+    to{
+        transform: translateX(0px)
+    }
+}
+
+.mypic{
+    width: 35%;    
+}
+
+.welcome{
+    text-align: right;
+    margin-top: -400px;
+    margin-right: -7ex;
+    padding-left: 2ex;
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    &::after {
+        content: "|";
+        animation: typing 4s steps(16) forwards,
+          caret 1s infinite;
+      }
+}
+
+@keyframes typing {
+	to { width: 0 }
+}
+@keyframes caret {
+	50% { color: transparent }
+}
+
+.heading{
+    display: inline-block;
+    text-align: right; 
+    font-size: 50px;
+    padding-right: 2ex;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+}
+
+.heading:hover{
+    color: brown;
+    cursor: pointer;
+    text-underline-offset: 12px;
+}
+
+
+.menu{  
+    width: 100ex;    
+    margin-top: 10ex;
+    margin-left: 54ex;
+    
+}
+
+.socials{
+    display: inline-block;
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;;
+}
+
+.links{
+    width: 6%;
+}
+
+.foot{
+    margin-left: 600px;
+    margin-top: 10px;
+}
+
+
+
