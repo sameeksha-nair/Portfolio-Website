@@ -11,10 +11,10 @@ function App() {
 <div>
         <div class="block">
             <div class = "picture"><img class = "mypic" src = {LinkedIn} alt = "mypic"></img></div>
-            <div class = "welcome">Hi! I'm <span>Sameeksha Nair</span>   <br></br> Welcome to my website :)</div>
+            <div class = "welcome">Hi! I'm <span style={{color: 'brown'}}>Sameeksha Nair</span>   <br></br> Welcome to my website :)</div>
             <div class="menu">
-                <div class = "heading" ><a href=''>About Me</a></div>
-                <div class = "heading"><a href=''>Projects</a></div>
+                <div class = "heading" ><a href='' style={{color: 'inherit', textDecoration: 'inherit'}}>About Me</a></div>
+                <div class = "heading"><a href=''style={{color: 'inherit', textDecoration: 'inherit'}}>Projects</a></div>
             </div>
         </div>
         <div class="foot">
@@ -36,19 +36,19 @@ function App() {
         <div class="inven">
                 <div class="video">
                     Simple fruits collection game with an Inventory system using Unreal Engine
-                    <video class="clothing" controls autoplay muted>
+                    <video class="clothing" controls autoPlay muted>
                     <source src={Inventory} type="video/mp4"></source>
                     </video>
                 </div>
                 <div class="video">
-                    A clothing store website with a working shopping cart system using HTML, CSS and Javascript (<a href="https://github.com/sameeksha-nair/Clothing-Brand-Website" target="_blank">link</a>)    
-                    <video class="clothing" controls autoplay muted>
+                    A clothing store website with a working shopping cart system using HTML, CSS and Javascript (<a href="https://github.com/sameeksha-nair/Clothing-Brand-Website" style={{color: 'inherit'}} target="_blank">link</a>)    
+                    <video class="clothing" controls autoPlay muted style={{paddingTop: '80px'}}>
                         <source src={Clothing} type="video/mp4"></source>
                         </video>
                 </div>
-                <div class="video">
-                    A 3D room made using GLUT and OpenGL libraries in C++ (CLassic OpenGL)(<a href="https://github.com/sameeksha-nair/3D-Room" target="_blank">link</a>)
-                    <img src={Room} alt="graphic room" class="room"></img>
+                <div className="video" style={{marginTop: '40px', marginLeft: '90px'}}>
+                    A 3D room made using GLUT and OpenGL libraries in C++ (CLassic OpenGL)(<a href="https://github.com/sameeksha-nair/3D-Room" style={{color: 'inherit'}} target="_blank">link</a>)
+                    <img src={Room} alt="graphic room" class="room" style={{marginTop: '20px'}}></img>
                 </div>
                
         </div>
