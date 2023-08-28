@@ -1,9 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
 import LinkedIn from './Photos/LinkedIn.jpeg';
 import Clothing from './Photos/clothing.mp4';
 import Inventory from './Photos/InvenGame.mp4';
 import Room from './Photos/room.jpg';
+import Login from './Photos/Login.png';
 import Resume from './Photos/Resume_Updated3.pdf';
 import { useRef } from 'react';
 
@@ -62,9 +63,13 @@ function App() {
                 </div>
                 <div className="video" style={{marginTop: '40px', marginLeft: '90px'}}>
                     A 3D room made using GLUT and OpenGL libraries in C++ (CLassic OpenGL)(<a href="https://github.com/sameeksha-nair/3D-Room" style={{color: 'inherit'}} target="_blank" rel='noreferrer'>link</a>)
-                    <img src={Room} alt="graphic room" class="room" style={{marginTop: '20px'}}></img>
+                    <img src={Room} alt="graphic room" className="room" style={{marginTop: '20px'}}></img>
                 </div>
                
+                <div className="video" style={{marginTop: '20px', marginLeft: '70px'}}>
+                    <p className='login-words'>Login System using MERN stack(<a href="https://github.com/sameeksha-nair/Login-System" style={{color: 'inherit'}} target="_blank" rel='noreferrer'>link</a>)</p>
+                    <img src={Login} alt="login-system" className="login" style={{marginTop: '5px', marginLeft: '15px'}}></img>
+                </div>
         </div>
         </div>
         
